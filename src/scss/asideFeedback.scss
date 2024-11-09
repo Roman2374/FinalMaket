@@ -1,0 +1,79 @@
+.asideFeedback {
+  width: 320px;
+  height: 100vh;
+  position: absolute;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  position: fixed;
+  display: block;
+  z-index: 5;
+  background-color: white;
+  right: 0; }
+  .asideFeedback__title {
+    display: flex; }
+  .asideFeedback .title-box__title {
+    align-self: end;
+    font-size: 24px; }
+  .asideFeedback__info {
+    font-size: 14px;
+    color: #7E7E82;
+    font-family: 'TT-Lakes Medium';
+    width: 288px;
+    margin: 0 auto; }
+  .asideFeedback__info--link {
+    color: #FF3E79;
+    text-decoration: none; }
+
+.feedbackSend {
+  width: 136px;
+  height: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: 16px;
+  margin-top: 19px;
+  border: none;
+  background-color: unset; }
+
+.feedbackSend:hover {
+  opacity: 0.7; }
+
+.feedbackClose {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  background-color: unset;
+  border: unset; }
+  .feedbackClose:hover {
+    opacity: 0.7; }
+
+.feedbackForm {
+  width: 288px;
+  margin: 0 auto;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column; }
+  .feedbackForm__name, .feedbackForm__tel, .feedbackForm__email, .feedbackForm__textArea {
+    height: 48px;
+    font-family: 'TT-Lakes Regular';
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    padding-left: 16px;
+    margin-bottom: 12px; }
+  .feedbackForm__textArea {
+    height: 118px;
+    padding-top: 12px; }
+
+@media (min-width: 1440px) {
+  .asideFeedback {
+    width: 440px;
+    padding-top: 32px; }
+    .asideFeedback__info {
+      width: 376px; }
+  .feedbackForm {
+    width: 376px; }
+  .feedbackClose {
+    transform: translateX(200%);
+    transition: transform 0.4s ease;
+    position: absolute;
+    right: 460px;
+    top: 10px; } }
